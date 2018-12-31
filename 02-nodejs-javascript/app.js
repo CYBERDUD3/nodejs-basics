@@ -9,7 +9,7 @@ var module2 = require('./module2')
 //     module1.myFunction();
 //     response.end();
 // }
-// http.createServer(onRequest).listen(8000);
+// http.createServer(onRequest).listen(8080);
 
 
 // function onRequest(request, response){
@@ -18,7 +18,7 @@ var module2 = require('./module2')
 //     module2.myFunction();
 //     response.end();
 // }
-// http.createServer(onRequest).listen(8000);
+// http.createServer(onRequest).listen(8080);
 
 
 http.createServer(function (request, response){
@@ -26,4 +26,4 @@ http.createServer(function (request, response){
     response.write(module2.myVariable);
     module2.myFunction();
     response.end();
-}).listen(8000);
+}).listen(8080);
